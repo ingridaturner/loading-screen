@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="spinner"></div>
+        <p id="loading-text">Loading...</p>
+    </div>
+
+<script>
+    const messages = [
+        "Hacking into the mainframe...",
+        "Stealing the source code...",
+        "Generating an alternate reality...",
+        "Entering the matrix...",
+        "Self-Destructing in 5 seconds...",
+        "Hahaha just kidding..."
+    ];
+
+    let index = 0;
+    const textElement = document.getElementById("loading-text");
+
+    setInterval(() => {
+        index = (index + 1) % messages.length;
+        textElement.textContent = messages[index];
+    }, 3000);
+</script>
+</body>
+
+</html>

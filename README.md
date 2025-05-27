@@ -1,2 +1,3 @@
 # loading-screen
-Fun loading screen created using HTML and CSS.
+A fun loading screen created using HTML and CSS.
+Tutorial followed: https://www.youtube.com/watch?v=jA4XQbD9REE
